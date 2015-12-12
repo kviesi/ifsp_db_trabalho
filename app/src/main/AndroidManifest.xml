@@ -24,16 +24,13 @@
         </activity>
         
         <provider
-            android:authorities="br.edu.ifspsaocarlos.sdm.agenda.provider"
             android:name=".provider.AgendaContentProvider"
-            android:permission="br.edu.ifspsaocarlos.sdm.agenda.provider.permission.ALL">
-
+            android:authorities="br.edu.ifspsaocarlos.sdm.agenda.provider"
+            android:readPermission="br.edu.ifspsaocarlos.sdm.agenda.provider.READ_PERMISSION"
+            android:writePermission="br.edu.ifspsaocarlos.sdm.agenda.provider.WRITE_PERMISSION"
+            android:exported="true">
         </provider>
         
     </application>
-    
-    
-
-
 
 </manifest>
